@@ -16,6 +16,10 @@ does not rank or rebut them here.
 > Oesterheld–Conitzer, Dynomight, distbit, Rasmont, and others).
 > incomplete by design; the numerous informal/practitioner objections
 > are still being folded in.
+>
+> companions: the SoTA bibliographies
+> [decision markets](sota-decision-markets.md) and
+> [DM-adjacent mechanisms](sota-dm-adjacent.md).
 
 ---
 
@@ -36,6 +40,7 @@ decision-maker needs.
 | A8 | partial randomization only attenuates | ε-randomization scales the confound by `(1-ε)`; a 5% coin flip leaves ~95% of it | F | distbit; Hanson |
 | A9 | no-reversion futility | partial randomization *without* market reversion has optimal randomization = 0 (bias rises with decision accuracy) | F | distbit (ADSB trilemma) |
 | A10 | conditional accuracy is data-hungrier | an `x%`-probability event needs ~`1/x` more markets than the unconditional version to reach the same accuracy | I | practitioner (ggresearch) |
+| A11 | selection / multiplicity / mode collapse | conditional-PM microstructure admits multiple equilibria and can collapse onto one mode, so the price need not track the intended counterfactual even absent manipulation | F | Gill et al. (2025), *Microstructure of Conditional Prediction Markets* |
 
 ## b. manipulation & adversarial
 
@@ -52,6 +57,7 @@ the family that says a strategic actor can move the answer.
 | B7 | influence market from rare settlement | when only a small branch settles but the large branch drives the real decision, outside-stake actors distort prices while facing settlement risk only on the rare branch | I | greaterwrong; distbit |
 | B8 | blackmail attack | threaten to move the metric/market unless paid off | I | distbit |
 | B9 | wash trading / coordinated bidding | collusive volume and curation-auction rings | I | general |
+| B10 | manipulation confirmed experimentally | in lab conditional decision markets, traders profitably manipulate the decision — not just a worst-case theorem | F | Teschner (2017), *Manipulation in Conditional Decision Markets* |
 
 ## c. objective & metric governance (Goodhart family)
 
