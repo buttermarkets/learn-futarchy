@@ -1,23 +1,23 @@
 # decision-market counterarguments
 
-an adversarial index of the known arguments for why decision markets
-(and futarchy) fail — or fail in specific cases. the companion to the
+An adversarial index of the known arguments for why decision markets
+(and futarchy) fail — or fail in specific cases. The companion to the
 [literature](README.md): where that list is what to read, this is what
 to answer.
 
-each entry is a single objection, its one-line claim, its class, and a
-source. **class**: `F` = formal (a theorem, closed form, or model);
-`I` = informal (argued, empirical, or design-level). the catalog is
+Each entry is a single objection, its one-line claim, its class, and a
+source. **Class**: `F` = formal (a theorem, closed form, or model);
+`I` = informal (argued, empirical, or design-level). The catalog is
 deliberately neutral — it states each objection at its strongest and
 does not rank or rebut them here.
 
-> status: **v0 seed** — compiled from the public literature and the
+> Status: **v0 seed** — compiled from the public literature and the
 > practitioner corpus (Hanson, Othman–Sandholm, Chen–Kash,
 > Oesterheld–Conitzer, Dynomight, distbit, Rasmont, and others).
-> incomplete by design; the numerous informal/practitioner objections
+> Incomplete by design; the numerous informal/practitioner objections
 > are still being folded in.
 >
-> companions: the SoTA bibliographies
+> Companions: the SoTA bibliographies
 > [decision markets](sota-decision-markets.md) and
 > [DM-adjacent mechanisms](sota-dm-adjacent.md).
 
@@ -25,7 +25,7 @@ does not rank or rebut them here.
 
 ## a. identification & decision theory
 
-the family that says a conditional price is not the causal quantity a
+The family that says a conditional price is not the causal quantity a
 decision-maker needs.
 
 | id | counterargument | claim | class | source |
@@ -44,7 +44,7 @@ decision-maker needs.
 
 ## b. manipulation & adversarial
 
-the family that says a strategic actor can move the answer.
+The family that says a strategic actor can move the answer.
 
 | id | counterargument | claim | class | source |
 |----|-----------------|-------|-------|--------|
@@ -61,7 +61,7 @@ the family that says a strategic actor can move the answer.
 
 ## c. objective & metric governance (Goodhart family)
 
-the family that says even a perfectly-run market optimizes the wrong,
+The family that says even a perfectly-run market optimizes the wrong,
 or a decaying, thing.
 
 | id | counterargument | claim | class | source |
@@ -74,7 +74,7 @@ or a decaying, thing.
 
 ## d. institutional & political economy
 
-the family that says the market can't stand where governance must.
+The family that says the market can't stand where governance must.
 
 | id | counterargument | claim | class | source |
 |----|-----------------|-------|-------|--------|
@@ -113,8 +113,8 @@ the family that says the market can't stand where governance must.
 
 ## how to use this
 
-these are the objections any serious decision-market design has to
-survive. a design's honesty is measured by which rows it answers with a
-mechanism, which it bounds, and which it concedes as out of scope. the
+These are the objections any serious decision-market design has to
+survive. A design's honesty is measured by which rows it answers with a
+mechanism, which it bounds, and which it concedes as out of scope. The
 strongest recent work does not claim to defeat every row — it is
 explicit about which family it lives in.

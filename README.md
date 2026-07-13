@@ -1,110 +1,87 @@
 # learn futarchy
 
+## start here
+
+- [Prediction market FAQ](https://www.astralcodexten.com/p/prediction-market-faq) (Astral Codex Ten)
+- Alex Tabarrok and Scott Kominers, [Prediction markets & information-aggregation mechanisms](https://a16zcrypto.com/posts/podcast/prediction-markets-information-aggregation-mechanisms) (a16z podcast)
+- Buterin, [Introduction to Futarchy](https://blog.ethereum.org/2014/08/21/introduction-futarchy) (Ethereum blog)
+- Hanson, [Futarchy Details](https://www.overcomingbias.com/p/futarchy-details)
+- Robin Hanson @ GG24, [Governance via Prediction Markets](https://www.youtube.com/watch?v=72wyqDQnbT4)
+- Martin Köppelmann, [The Road to Futarchy](https://www.youtube.com/watch?v=FUAdCatOM-M)
+
 ## literature
 
-### prediction markets
+### what is futarchy?
 
-_Tradeable contracts whose prices aggregate crowd beliefs about how an uncertain future event will turn out._
+*Separate values (voted) from beliefs (bet), then let markets pick the policy that best serves the metric.*
 
-📍 Hanson, [Combinatorial Information Market Design](https://mason.gmu.edu/~rhanson/combobet.pdf)
+- Hanson, [Futarchy: Vote Values, But Bet Beliefs](https://mason.gmu.edu/~rhanson/futarchy.html)
+- Distbit, [The Different Types of Futarchy](https://ggresear.ch/t/the-different-types-of-futarchy-more-than-you-wanted-to-know/74) (the landscape)
+- Buterin, [From prediction markets to info finance](https://vitalik.eth.limo/general/2024/11/09/infofinance.html) (the broader frame)
 
-Hanson, [Logarithmic Market Scoring Rules for Modular Combinatorial Information Aggregation](https://mason.gmu.edu/~rhanson/mktscore.pdf)
+### the market engine
 
-📍 Wolfers, Zitzewitz, [Prediction Markets](https://users.nber.org/~jwolfers/Papers/Predictionmarkets.pdf)
+*How beliefs become a tradeable, always-priced signal.*
 
-Hanson, Oprea, Porter, [Information Aggregation and Manipulation in an Experimental Market](https://mason.gmu.edu/~rhanson/biastest.pdf)
+- Hanson, [Combinatorial Information Market Design](https://mason.gmu.edu/~rhanson/combobet.pdf)
+- Hanson, [Logarithmic Market Scoring Rules](https://mason.gmu.edu/~rhanson/mktscore.pdf)
+- Wolfers, Zitzewitz, [Prediction Markets](https://users.nber.org/~jwolfers/Papers/Predictionmarkets.pdf) (do markets aggregate?)
+- Hanson, Oprea, Porter, [Information Aggregation and Manipulation in an Experimental Market](https://mason.gmu.edu/~rhanson/biastest.pdf)
+- Zack Amoveo, [MSRs and Prediction Markets](https://github.com/zack-bitcoin/amoveo-docs/blob/master/basics/msrs_and_prediction_markets.md); Gnosis, [Conditional Tokens](https://web.archive.org/web/20221219190117/https://docs.gnosis.io/conditionaltokens/docs/introduction1/) (the token mechanism)
 
-### decision markets
+### from prediction to decision markets
 
-_Prediction markets that forecast the outcome of a specific metric conditioned on a decision being taken._
+*Once the price drives the choice, a naïve decision rule is manipulable.*
 
-📍 Othman, Sandholm, [Decision Rules and Decision Markets](https://www.cs.cmu.edu/~sandholm/decision%20rules%20and%20decision%20markets.AAMAS10.pdf)
+- Othman, Sandholm, [Decision Rules and Decision Markets](https://www.cs.cmu.edu/~sandholm/decision%20rules%20and%20decision%20markets.AAMAS10.pdf)
 
-Chen, Kash, [Information Elicitation for Decision Making](https://projects.iq.harvard.edu/sites/projects.iq.harvard.edu/files/yiling/files/decisionrules.pdf)
+### making decision markets truthful
 
-Oesterheld, Conitzer [Decision Scoring Rules](https://users.cs.duke.edu/~conitzer/decisionWINE20.pdf)
+*When the report drives the choice, the expert can misreport to steer it. Keeping them honest is a trade-off space, not one recipe.*
 
-### futarchy
+- Chen, Kash, [Information Elicitation for Decision Making](https://projects.iq.harvard.edu/sites/projects.iq.harvard.edu/files/yiling/files/decisionrules.pdf) — **randomize**: give the decision rule full support so every action is sometimes taken and scored. You learn every action's effect, but pay an exploration cost (rarer randomization ⇒ rewards scale up inversely).
+- Oesterheld, Conitzer, [Decision Scoring Rules](https://users.cs.duke.edu/~conitzer/decisionWINE20.pdf) — **don't randomize**: the principal just follows the recommendation and pays the expert in "shares" of the realized outcome. Truthful with no suboptimal actions — but you only elicit the recommended action's expected utility, not the unchosen counterfactuals.
 
-_Use decision markets to choose policies that best improve agreed-upon metrics._
+## counterarguments & attack vectors
 
-📍 Hanson, [Futarchy: Vote Values, But Bet Beliefs](https://mason.gmu.edu/~rhanson/futarchy.html).
+Full objections index: [counterarguments](counterarguments.md). The formal manipulation/failure results are in [sota-decision-markets](sota-decision-markets.md).
 
-Merkle, [DAOs, Democracy and Governance](https://www.ralphmerkle.com/papers/DAOdemocracyDraft.pdf).
+- Hanson, [Decision Selection Bias](https://www.overcomingbias.com/p/decision-selection-bias)
+- Anders_H, [Prediction Markets are Confounded — Implications for the feasibility of Futarchy](https://www.greaterwrong.com/posts/xnC68ZfTkPyzXQS8p/prediction-markets-are-confounded-implications-for-the) (2015, general statement of the confounding problem)
+- Distbit, [Correlation vs Causation in Futarchy](https://distbit.xyz/correlation-vs-causation-in-futarchy)
+- Oesterheld, [Futarchy Implements Evidential Decision Theory](https://casparoesterheld.com/2017/12/18/futarchy-implements-evidential-decision-theory/)
+- Rasmont, [Futarchy is Parasitic on What It Tries to Govern](https://www.lesswrong.com/posts/mW4ypzR6cTwKqncvp/futarchy-is-parasitic-on-what-it-tries-to-govern) (the "Bronze Bull" endogenous-selection argument)
+- Bolton Bailey, [Futarchy of Mutating Preferences](https://thequantummilkman.substack.com/p/futarchy-of-mutating-preferences)
+- Hanson, [Futarchy and the Transfer Problem](https://www.overcomingbias.com/p/futarchy-and-the-transfer-problem)
+- [Robin Hanson and "Mencius Moldbug" debate futarchy at Foresight 2010](https://www.youtube.com/watch?v=Tb-6ikXdOzE)
 
-## articles
+## governance
 
-Butter, [Conditional Funding Markets](https://ggresear.ch/t/conditional-funding-markets/27)
+Applying market signals to real institutions and DAOs.
 
-Distbit, [Correlation vs Causation in Futarchy](https://distbit.xyz/correlation-vs-causation-in-futarchy)
+- Merkle, [DAOs, Democracy and Governance](https://www.ralphmerkle.com/papers/DAOdemocracyDraft.pdf)
+- Waggoner, [Governance mixing auctions and futarchy](https://ethresear.ch/t/governance-mixing-auctions-and-futarchy/10772)
+- Butter, [Conditional Funding Markets](https://ggresear.ch/t/conditional-funding-markets/27)
+- Sztorc, [Fork Futures](https://www.truthcoin.info/blog/fork-futures/)
+- [Futarchy Nonprofits](https://docs.google.com/document/d/1cxAWuW1HxJY_bD0gYELpUPzo5-ONCl6r9UHnqjE0_TQ/mobilebasic)
+- Buterin, [AI as the engine, humans as the steering wheel](https://vitalik.eth.limo/general/2025/02/28/aihumans.html)
+- [Markets in Fact-Checking](https://worksinprogress.co/issue/markets-in-fact-checking/)
+- Heavey, [Futarchy as Trustless Joint Ownership](https://www.umbraresearch.xyz/writings/futarchy)
+- Greshams Code, [MetaDAO: The Bull Case](https://greshamscode.substack.com/p/metadao-the-bull-case)
+- Hanson, [Futarchy Futurism](https://www.overcomingbias.com/p/futarchy-futurism)
 
-Distbit, [The Different Types of Futarchy](https://ggresear.ch/t/the-different-types-of-futarchy-more-than-you-wanted-to-know/74)
+## going deeper
 
-Waggoner, [Governance mixing auctions and futarchy](https://ethresear.ch/t/governance-mixing-auctions-and-futarchy/10772)
-
-Gnosis, [Conditional Tokens](https://web.archive.org/web/20221219190117/https://docs.gnosis.io/conditionaltokens/docs/introduction1/)
-
-[Robin Hanson and "Mencius Moldbug" debate futarchy at Foresight 2010](https://www.youtube.com/watch?v=Tb-6ikXdOzE)
-
-[Prediction Markets are Confounded—Implications for the feasibility of Futarchy](https://www.greaterwrong.com/posts/xnC68ZfTkPyzXQS8p/prediction-markets-are-confounded-implications-for-the)
-
-Sztorc, [Fork Futures](https://www.truthcoin.info/blog/fork-futures/)
-
-[Futarchy Nonprofits](https://docs.google.com/document/d/1cxAWuW1HxJY_bD0gYELpUPzo5-ONCl6r9UHnqjE0_TQ/mobilebasic)
-
-Zack, [MSRs and Prediction Markets](https://github.com/zack-bitcoin/amoveo-docs/blob/master/basics/msrs_and_prediction_markets.md)
-
-Microprediction, [The Global Financial Crisis Should Have Been Caught by the Compiler, An Insider's Perspective](https://scribe.rip/geekculture/the-global-financial-crisis-should-have-been-caught-by-the-compiler-an-insiders-perspective-9229967e7f45)
-
-Bolton, [Futarchy of Mutating Preferences](https://thequantummilkman.substack.com/p/futarchy-of-mutating-preferences)
-
-Buterin, [From prediction markets to info finance](https://vitalik.eth.limo/general/2024/11/09/infofinance.html)
-
-Buterin, [AI as the engine, humans as the steering wheel](https://vitalik.eth.limo/general/2025/02/28/aihumans.html)
-
-[Markets in Fact-Checking](https://worksinprogress.co/issue/markets-in-fact-checking/)
-
-Hanson, [Decision Selection Bias](https://www.overcomingbias.com/p/decision-selection-bias)
-
-Hanson, [Futarchy and the Transfer Problem](https://www.overcomingbias.com/p/futarchy-and-the-transfer-problem)
-
-Hanson, [Futarchy Futurism](https://www.overcomingbias.com/p/futarchy-futurism)
-
-Heavey, [Futarchy as Trustless Joint Ownership](https://www.umbraresearch.xyz/writings/futarchy)
-
-Greshams Code, [MetaDAO: The Bull Case](https://greshamscode.substack.com/p/metadao-the-bull-case)
-
-
-## introductions
-
-### prediction markets (preliminary)
-
-https://www.astralcodexten.com/p/prediction-market-faq
-
-https://a16zcrypto.com/posts/podcast/prediction-markets-information-aggregation-mechanisms
-
-### futarchy
-
-📍 https://blog.ethereum.org/2014/08/21/introduction-futarchy
-
-📍 https://www.overcomingbias.com/p/futarchy-details
-
-Robin Hanson @ GG 24, [Governance via Prediction Markets](https://www.youtube.com/watch?v=72wyqDQnbT4)
-
-Martin Köppelmann, [The Road to Futarchy](https://www.youtube.com/watch?v=FUAdCatOM-M)
+- [decision-market SoTA bibliography](sota-decision-markets.md)
+- [DM-adjacent information-market mechanisms](sota-dm-adjacent.md)
+- [the objection index](counterarguments.md)
 
 ## projects
 
-[Butter](https://buttery.gg)
-
-[MetaDAO](https://metadao.fi)
-
-[Gnosis](https://web.archive.org/web/20230323140305/https://docs.gnosis.io/conditionaltokens/) (partially discontinued)
-
-[TruthCoin](https://www.truthcoin.info/papers/) (discontinued)
-
-[Amoveo](https://github.com/zack-bitcoin/amoveo-docs/blob/master/blog_posts/futarchys_failure.md) (discontinued)
-
-[Zeitgeist](https://docs.zeitgeist.pm/docs/learn/futarchy)
-
-[Futarchy.fi](https://futarchy.fi/)
+- [Butter](https://butter.markets)
+- [MetaDAO](https://metadao.fi)
+- [Futarchy.fi](https://futarchy.fi/)
+- [Amoveo](https://github.com/zack-bitcoin/amoveo-docs/blob/master/blog_posts/futarchys_failure.md) (discontinued)
+- [Gnosis](https://web.archive.org/web/20230323140305/https://docs.gnosis.io/conditionaltokens/) (partially discontinued)
+- [Zeitgeist](https://docs.zeitgeist.pm/docs/learn/futarchy)
+- [TruthCoin](https://www.truthcoin.info/papers/) (discontinued)

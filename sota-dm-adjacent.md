@@ -1,22 +1,22 @@
 # DM-adjacent information-market mechanisms — SoTA
 
-information-market and elicitation mechanisms that are *not* decision
+Information-market and elicitation mechanisms that are *not* decision
 markets per se, but share properties that let them be assimilated into
-decision-market design. this list is a bid to map and categorize that
+decision-market design. This list is a bid to map and categorize that
 space.
 
-> **defining "DM-adjacent" — deliberately open.** a working boundary: a
+> **Defining "DM-adjacent" — deliberately open.** A working boundary: a
 > mechanism is DM-adjacent if it elicits decision-relevant signals from
 > incentivized agents with an incentive-compatibility or identification
 > property that transfers to, or composes with, decision-market design.
-> this definition is provisional on purpose — sharpening it is the point
+> This definition is provisional on purpose — sharpening it is the point
 > of owning the category.
 >
-> status: **v0**, seeded from the maintainer's reference library.
+> Status: **v0**, seeded from the maintainer's reference library.
 
 ## a. peer prediction / elicitation without ground truth
 
-rewarding truthful reports when no verifiable outcome exists — a cousin
+Rewarding truthful reports when no verifiable outcome exists — a cousin
 of the decision-market identification problem.
 
 - Miller, Resnick & Zeckhauser (2005), *Eliciting Informative Feedback: The Peer-Prediction Method* — the foundational construction.
@@ -27,7 +27,7 @@ of the decision-market identification problem.
 
 ## b. proper & market scoring rules / market-maker theory
 
-the pricing substrate decision markets run on.
+The pricing substrate decision markets run on.
 
 - Chen & Vaughan (2010), *A New Understanding of Prediction Markets via No-Regret Learning*.
 - Chen & Pennock (2012), *A Utility Framework for Bounded-Loss Market Makers*.
@@ -37,7 +37,7 @@ the pricing substrate decision markets run on.
 
 ## c. CFMM ↔ prediction-market equivalence
 
-the bridge from DeFi constant-function market makers to prediction-market
+The bridge from DeFi constant-function market makers to prediction-market
 scoring rules — the property that lets on-chain liquidity venues be read
 as prediction mechanisms.
 

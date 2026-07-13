@@ -1,37 +1,51 @@
 # decision markets — SoTA bibliography
 
-a completeness (long-list) bibliography of the decision-market research
+A completeness (long-list) bibliography of the decision-market research
 line — the companion to the hand-curated shortlist in
 [README](README.md) and the objection index in
 [counterarguments](counterarguments.md).
 
-> status: **v0**, compiled from the maintainer's reference library. the
+> Status: **v0**, compiled from the maintainer's reference library. The
 > README stays a hand-picked shortlist; this is the completeness pass.
-> years/attributions still being verified.
+> Years/attributions still being verified.
 
-## foundational — decision markets & decision rules
+## foundations
 
 - Hanson (2000/2013), *Shall We Vote on Values, But Bet on Beliefs?* — the futarchy proposal.
-- Othman & Sandholm (2010), *Decision Rules and Decision Markets* — max-rule manipulation; the unbounded worst case that motivates full support.
-- Chen & Kash (2011), *Information Elicitation for Decision Making* — full-support characterization for incentive-compatible decision markets.
-- Chen, Kash, Ruberry & Shnayder (2011), *Decision Markets with Good Incentives* — inverse-probability decision scoring; the strictly-proper construction.
+- Othman & Sandholm (2010), *Decision Rules and Decision Markets* — when the price drives the choice, naïve decision rules are manipulable (unbounded worst case); the problem the solutions below answer.
+
+## SoTA solutions
+
+Two solution families for the truthfulness problem — randomize the decision, or don't.
+
+*Randomize (full support):*
+- Chen & Kash (2011), *Information Elicitation for Decision Making* — the full-support characterization: the decision rule must sometimes randomize.
+- Chen, Kash, Ruberry & Shnayder (2011), *Decision Markets with Good Incentives* — the strictly-proper construction (inverse-probability decision scoring).
 - Chen et al. (2014), *Eliciting Predictions and Recommendations for Decision Making* — extends elicitation-for-decisions.
 
-## decision scoring rules
+*Don't randomize (equity / decision scoring rules):*
+- Oesterheld & Conitzer (2020), *Decision Scoring Rules* — follow the recommendation, pay the expert in shares of the outcome; truthful with no exploration cost, but only the recommended action's value is elicited.
+- Oesterheld (2017), *Futarchy Implements Evidential Decision Theory* — why the deterministic route is evidential, not causal (see counterarguments A3).
 
-- Oesterheld & Conitzer (2020), *Decision Scoring Rules* — proper scoring rules for the decision-conditional setting.
-- Oesterheld (2017), *Futarchy Implements Evidential Decision Theory* — the EDT-vs-CDT reading (see counterarguments A3).
+## manipulation: theory & evidence
 
-## manipulation & failure results (formal)
+*Theory:*
+- Chen, Dimitrov, Sami, et al. (2010), *Gaming Prediction Markets: Equilibrium Strategies with a Market Maker* — strategic (non-myopic) manipulation of an MSR market maker.
 
-- Teschner (2017), *Manipulation in Conditional Decision Markets* — experimental confirmation of profitable manipulation (counterargument B10).
-- Gill et al. (2025), *The Microstructure of Conditional Prediction Markets: A Theory of Selection, Multiplicity, and Mode Collapse in Futarchy* — a selection / multiplicity / mode-collapse failure family (counterargument A11).
+*Evidence:*
+- Hanson, Oprea & Porter (2006), *Information Aggregation and Manipulation in an Experimental Market* — lab manipulators are countered; accuracy holds.
+- Hanson & Oprea (2009), *A Manipulator Can Aid Prediction Market Accuracy* — manipulation can raise accuracy via added liquidity.
+- Teschner (2017), *Manipulation in Conditional Decision Markets* — a decision-market experiment with profitable manipulation (counterargument B10).
+
+*Aggregation limits:*
+- Ostrovsky (2012), *Information Aggregation in Dynamic Markets with Strategic Traders* — separable securities aggregate; others need not.
+
+*Recent:*
+- Gill et al. (2025), *The Microstructure of Conditional Prediction Markets: A Theory of Selection, Multiplicity, and Mode Collapse in Futarchy* — formal selection / multiplicity / mode-collapse (counterargument A11).
 
 ## governance applications
 
-- Hanson, *Prediction Markets and Governance*.
 - Buterin (2016), *Casper interest rates as a futarchy objective function*.
-- Gorelkina, *A Dynamic Mechanism Design Model for Blockchain Governance*.
 
 ## see also
 
