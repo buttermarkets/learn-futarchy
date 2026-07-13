@@ -45,6 +45,9 @@ Two solution families for the truthfulness problem — randomize the decision, o
 
 ## governance applications
 
+- Hahn & Tetlock (2005), *Using Information Markets to Improve Public Decision Making* — the peer-reviewed case for information markets in public decisions.
+- Hanson (2007), *The Policy Analysis Market: A Thwarted Experiment in the Use of Prediction Markets for Public Policy* — the DARPA public-policy market episode.
+- Merkle, *DAOs, Democracy and Governance* — self-modifying goal-driven organizations (also in the README).
 - Buterin (2016), *Casper interest rates as a futarchy objective function*.
 
 ## see also
