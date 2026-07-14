@@ -30,7 +30,7 @@ decision-maker needs.
 
 | id | counterargument | claim | class | source |
 |----|-----------------|-------|-------|--------|
-| A1 | conditioning ≠ intervening | conditional price `E[W|A]` diverges from `E[W|do(A)]` whenever choosing `A` is itself evidence about hidden fundamentals | I/F | greaterwrong, [Prediction Markets are Confounded](https://www.greaterwrong.com/posts/xnC68ZfTkPyzXQS8p/prediction-markets-are-confounded-implications-for-the); PhilH |
+| A1 | conditioning ≠ intervening | conditional price `E[W\|A]` diverges from `E[W\|do(A)]` whenever choosing `A` is itself evidence about hidden fundamentals | I/F | greaterwrong, [Prediction Markets are Confounded](https://www.greaterwrong.com/posts/xnC68ZfTkPyzXQS8p/prediction-markets-are-confounded-implications-for-the); PhilH |
 | A2 | decision selection bias | information arriving between pricing and decision biases the accepted set; acceptance correlates with the good state | F | Hanson, "decision selection bias" |
 | A3 | futarchy implements EDT | conditional-market governance is evidential, not causal, decision theory | F | Oesterheld (2017) |
 | A4 | bribe ≤ mechanism value (FDT) | a pure-mechanism market is CDT-shaped; a bribe exceeding its own value defeats it, and unbounded (FDT) resistance is unreachable | I | distbit |
