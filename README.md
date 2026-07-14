@@ -16,7 +16,7 @@
 *Separate values (voted) from beliefs (bet), then let markets pick the policy that best serves the metric.*
 
 - Hanson, [Futarchy: Vote Values, But Bet Beliefs](https://mason.gmu.edu/~rhanson/futarchy.html)
-- Distbit, [The Different Types of Futarchy](https://ggresear.ch/t/the-different-types-of-futarchy-more-than-you-wanted-to-know/74) (the landscape)
+- Distbit, [The Different Types of Futarchy](https://github.com/buttermarkets/ggresearch/blob/main/topic/gov-designs/the-different-types-of-futarchy-more-than-you-wanted-to-know.md) (the landscape)
 - Buterin, [From prediction markets to info finance](https://vitalik.eth.limo/general/2024/11/09/infofinance.html) (the broader frame)
 
 ### the market engine
