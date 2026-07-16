@@ -53,8 +53,9 @@ as prediction mechanisms.
 
 - Hanson, *Combinatorial Information Market Design* (the LMSR / combinatorial line).
 
-## f. on-chain oracle & PM platforms (practitioner adjacency)
+## f. practitioner applications & platforms
 
+- Microprediction (2023), [*The Global Financial Crisis Should Have Been Caught By the Compiler (An Insider’s Perspective)*](https://medium.com/geekculture/the-global-financial-crisis-should-have-been-caught-by-the-compiler-an-insiders-perspective-9229967e7f45) — an information-finance application arguing that market-implied probabilities can correct model inputs that omit dispersed market information and compound errors in structured finance.
 - Peterson et al. (2018), *Augur: a decentralized oracle and prediction market platform*.
 - Zeitgeist, *Rikiddo Scoring Rule*.
 - Sztorc, *Extra-Predictive Applications of Prediction Markets*; *Peer-to-Peer Oracle System and Prediction Marketplace*; *Unlocking the Power of Prediction Markets*.
