@@ -100,6 +100,7 @@ The family that says the market can't stand where governance must.
 |----|-----------------|-------|-------|--------|
 | F1 | deterministic rules aren't IC | any deterministic report→allocation rule on conditional markets inherits max-rule manipulability (e.g. the share ≠ contribution bug in proportional funding) | F | Chen–Kash lineage |
 | F2 | invalid / N-A resolution | how to price and resolve a "neither / void" branch without a free option | I | practitioner |
+| F3 | adversarial proposal design | permissionless authors can make delivery, payoffs, or fail-branch outcomes contingent on resistance, so rational trading selects an extractive proposal unless admission is governed | I | distbit, [Futarchy is not secure without a proposal gatekeeper](https://distbit.xyz/malicious-futarchy-proposal-strategies/) |
 
 ## g. epistemic & AI-era
 

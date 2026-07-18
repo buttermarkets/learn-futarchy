@@ -33,6 +33,7 @@
 
 *Once the price drives the choice, a naïve decision rule is manipulable.*
 
+- Hanson, [Decision Markets](https://mason.gmu.edu/~rhanson/decisionmarkets.pdf) — the early formulation of markets that estimate consequences conditional on decisions.
 - Othman, Sandholm, [Decision Rules and Decision Markets](https://www.cs.cmu.edu/~sandholm/decision%20rules%20and%20decision%20markets.AAMAS10.pdf)
 
 ### making decision markets truthful
@@ -51,6 +52,7 @@ Full objections index: [counterarguments](counterarguments.md). The formal manip
 - Distbit, [Correlation vs Causation in Futarchy](https://distbit.xyz/correlation-vs-causation-in-futarchy)
 - Oesterheld, [Futarchy Implements Evidential Decision Theory](https://casparoesterheld.com/2017/12/18/futarchy-implements-evidential-decision-theory/)
 - Rasmont, [Futarchy is Parasitic on What It Tries to Govern](https://www.lesswrong.com/posts/mW4ypzR6cTwKqncvp/futarchy-is-parasitic-on-what-it-tries-to-govern) (the "Bronze Bull" endogenous-selection argument)
+- Distbit, [Futarchy is not secure without a proposal gatekeeper](https://distbit.xyz/malicious-futarchy-proposal-strategies/) — adversarial proposal strategies that exploit conditional execution and market incentives.
 - Bolton Bailey, [Futarchy of Mutating Preferences](https://thequantummilkman.substack.com/p/futarchy-of-mutating-preferences)
 - Hanson, [Futarchy and the Transfer Problem](https://www.overcomingbias.com/p/futarchy-and-the-transfer-problem)
 - [Robin Hanson and "Mencius Moldbug" debate futarchy at Foresight 2010](https://www.youtube.com/watch?v=Tb-6ikXdOzE)

@@ -11,6 +11,7 @@ line — the companion to the hand-curated shortlist in
 
 ## foundations
 
+- Hanson (1999), [*Decision Markets*](https://mason.gmu.edu/~rhanson/decisionmarkets.pdf) — the early concise formulation of markets that estimate consequences conditional on decisions.
 - Hanson (2000/2013), *Shall We Vote on Values, But Bet on Beliefs?* — the futarchy proposal.
 - Othman & Sandholm (2010), *Decision Rules and Decision Markets* — when the price drives the choice, naïve decision rules are manipulable (unbounded worst case); the problem the solutions below answer.
 
@@ -47,6 +48,7 @@ Two solution families for the truthfulness problem — randomize the decision, o
 
 - Hahn & Tetlock (2005), *Using Information Markets to Improve Public Decision Making* — the peer-reviewed case for information markets in public decisions.
 - Hanson (2007), *The Policy Analysis Market: A Thwarted Experiment in the Use of Prediction Markets for Public Policy* — the DARPA public-policy market episode.
+- Abramowicz (2008), [*Predictocracy: Market Mechanisms for Public and Private Decision Making*](https://academic.oup.com/yale-scholarship-online/book/19774) — a book-length treatment of prediction-market mechanisms for legislatures, agencies, corporations, and courts.
 - Merkle, *DAOs, Democracy and Governance* — self-modifying goal-driven organizations (also in the README).
 - Buterin (2016), *Casper interest rates as a futarchy objective function*.
 

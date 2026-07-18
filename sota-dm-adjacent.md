@@ -52,8 +52,14 @@ as prediction mechanisms.
 ## e. combinatorial / structured markets
 
 - Hanson, *Combinatorial Information Market Design* (the LMSR / combinatorial line).
+- Buterin (2020), [*Prediction market design for betting on many highly improbable events*](https://ethresear.ch/t/prediction-market-design-for-betting-on-many-highly-improbable-events/8280) — bundles rare events so a trader can take a position against all of them with a single unit of collateral.
 
-## f. practitioner applications & platforms
+## f. institutional applications & field evidence
+
+- Hanson (1995), [*Could Gambling Save Science? Encouraging an Honest Consensus*](https://mason.gmu.edu/~rhanson/gamble.html) — the canonical idea-futures proposal for using information prizes to improve scientific consensus.
+- Cowgill & Zitzewitz (2014), [*Corporate Prediction Markets: Evidence from Google, Ford, and Firm X*](https://dl.acm.org/doi/10.1145/2600057.2602901) — field evidence that thin internal markets outperformed expert forecasts while identifiable biases declined with experience.
+
+## g. practitioner platforms
 
 - Microprediction (2023), [*The Global Financial Crisis Should Have Been Caught By the Compiler (An Insider’s Perspective)*](https://medium.com/geekculture/the-global-financial-crisis-should-have-been-caught-by-the-compiler-an-insiders-perspective-9229967e7f45) — an information-finance application arguing that market-implied probabilities can correct model inputs that omit dispersed market information and compound errors in structured finance.
 - Peterson et al. (2018), *Augur: a decentralized oracle and prediction market platform*.
